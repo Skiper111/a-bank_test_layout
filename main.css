@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    border-bottom: 2px black solid;
+}
+
+header a  {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: black 1px solid;
+}
+
+header :first-child {
+    border: 0;
+    margin-left: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+aside {
+    overflow: auto;
+    height: 100vh;
+    border-right: 2px solid black;
+    position: sticky;
+    width: 300px;
+}
+
+aside ul {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.icon {
+    margin: 0;
+    padding: 0 0 0 15px;
+    background-image: url("assets/directory.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 12px;
+}
+
+nav {
+    width: 100%;
+    height: 35px;
+    position: sticky;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 7px;
+}
+nav ul :not(:last-child)::after {
+    margin-left: 7px;
+    content: '';
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-image: url(assets/arrow.png);
+    background-size: contain;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    height: 250px;
+    width: 250px;
+}
+
+img {
+    background: no-repeat;
+    height: 250px;
+    width: 250px;
+}
+
+.description {
+    text-align: center;
+}
+
